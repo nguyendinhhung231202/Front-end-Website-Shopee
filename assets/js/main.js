@@ -147,9 +147,9 @@ function warning(){
 function info(){
     toast({
         title: 'Thông báo',
-        message: 'Bạn muốn mua hàng ?, vui lòng liên hệ linh chipubi 😎',
+        message: 'Bạn muốn mua hàng ?, vui lòng đăng ký tài khoản của bạn',
         type: 'info',    
-        duration: 6000   
+        duration: 600000   
     })
 
 }
@@ -163,5 +163,4 @@ function info(){
 // setInterval(function() {
 //     alert('thông báo' + Math.random())
 // }, 3000)
-
 

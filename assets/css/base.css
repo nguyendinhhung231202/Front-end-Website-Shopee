@@ -16,6 +16,8 @@
     --header-height: 120px;
     --navbar-height:34px;
     --header-with-searth-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height:46px;
+
 }
 
 html {
@@ -29,17 +31,6 @@ html {
 }
 
 /* Responsive */
-
-.grid{
-    /* div.grid có kích thước chỉnh bên css là 1200px bé hơn kích thước trình duyệt nên nó sẽ căn giữa bn thuộc tính magin: auto  */
-    width: 1450px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
 
 .grid__row {
     /* chục nằm ngang--> nội dung đc đẩy lên nằm ngang */
@@ -66,6 +57,16 @@ html {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
+}
+
+.center-align-justify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 
 /* Animation*/
@@ -185,7 +186,7 @@ html {
 
 @-webkit-keyframes mymove {
     from {
-        top: -390px;
+        top: -900px;
     }
 
     to {
@@ -266,41 +267,6 @@ html {
 }
 
 
-
-/* start notification */
-
-@keyframes slideInleft {
-    from {
-        opacity: 0;
-        transform: translateX(calc(100% + 40px));
-
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes vvd {
-    from {
-        opacity: 0;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(calc(100% + 40px));
-    }
-}
-
-@keyframes  fadeOut{
-    to {
-        opacity: 0;
-    }
-}
-/* end notification */
-
-
-
 /* thu */
 
 
@@ -313,7 +279,7 @@ html {
     left: 0;
     bottom: 0;
     display: none;
-    z-index: 2;
+    z-index: 9999;
     /* css:hover dùng tạm  */
 
     /* display: none;
@@ -335,7 +301,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    z-index: 9999;
 }
 
 .model__body {
@@ -346,7 +312,7 @@ html {
     border-radius: 2px;
     /* animation: fadeIn linear 1s; */
     animation: row_2 ease-in 0.4s;
-    z-index: 1;
+    z-index: 9999;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4)
 }
 
